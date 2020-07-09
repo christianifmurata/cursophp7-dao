@@ -26,9 +26,14 @@ require_once("config.php");
 //echo $aluno;
 
 //Altera o login e senha do ID carregado anteriormente
+//$usuario = new Usuario();
+//$usuario->loadById(10);
+//$usuario->update("japones", "1234");
+//echo $usuario;
+
 $usuario = new Usuario();
-$usuario->loadById(10);
-$usuario->update("japones", "1234");
+$usuario->loadById(7);
+$usuario->delete();
 echo $usuario;
 
 ?>
